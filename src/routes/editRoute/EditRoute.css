@@ -1,0 +1,26 @@
+.iputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.btnSubmit {
+  width: fit-content;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  background-color: rgb(140, 140, 223);
+  border-radius: 5px;
+  border: none;
+}
+
+.btnSubmit:hover {
+  background-color: #99c1ef;
+  cursor: pointer;
+}
+
+input,
+select {
+  border-radius: 5px;
+  border: none;
+  padding: 0.4rem;
+  min-width: 200px;
+}

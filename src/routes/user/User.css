@@ -1,0 +1,74 @@
+* {
+  text-decoration: none;
+}
+
+.usersfoto {
+  max-height: 110px;
+  padding: 0.2rem;
+}
+
+.size-6 {
+  max-width: 15px;
+  padding-bottom: 0.6rem;
+}
+
+.userContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  background-color: rgb(188, 188, 213);
+  width: 500px;
+  border-radius: 3px;
+}
+
+.userData {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  justify-content: space-between;
+}
+
+.birthday,
+.address,
+.gender,
+.tel,
+.email,
+.website {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  padding-right: 1rem;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.2rem;
+  width: 100%;
+}
+
+.username {
+  color: rgb(72, 26, 26);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.leftSubContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 0.5rem;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  padding-bottom: 0px;
+  color: red;
+  min-width: 23px;
+}
