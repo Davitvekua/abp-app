@@ -6,10 +6,10 @@ function Root() {
     <div className="main-container">
       <nav className="sideBar">
         <div className="label">ABP-APP</div>
-        <Link to="/abp-app/overview">
+        <Link to="./overview">
           <button className="buttons">Übersicht</button>
         </Link>
-        <Link to="/abp-app/create">
+        <Link to="./create">
           <button className="buttons">Erstellen</button>
         </Link>
       </nav>
