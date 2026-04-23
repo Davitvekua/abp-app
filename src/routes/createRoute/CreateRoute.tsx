@@ -48,7 +48,7 @@ function CreateRoute({
     const submitUser = handleSubmit();
 
     if (submitUser) {
-      navigate("/overview");
+      navigate("/abp-app/overview");
     }
   }
 

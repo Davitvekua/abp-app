@@ -35,7 +35,7 @@ function UserRoute({
   return (
     <>
       <div className="userContainer">
-        <img className="usersfoto" src="/usersfoto.jpeg" alt="Users Foto" />
+        <img className="usersfoto" src="./usersfoto.jpeg" alt="Users Foto" />
         <div className="leftContainer">
           <div className="leftSubContainer">
             <div className="username">{userName}</div>

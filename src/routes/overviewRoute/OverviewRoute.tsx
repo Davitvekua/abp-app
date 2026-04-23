@@ -19,7 +19,7 @@ function OverviewRoute({ users, setUsers }: Props) {
       {users.length === 0 && <p>Keine User vorhanden</p>}
 
       {users.map((user) => (
-        <Link key={user.userid} to={`/overview/${user.userid}`}>
+        <Link key={user.userid} to={`${user.userid}`}>
           <UserRoute
             key={user.userid}
             userName={user.userName}

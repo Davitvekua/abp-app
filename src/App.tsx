@@ -86,7 +86,7 @@ function App() {
             },
             {
               path: ":userId",
-              element: <EditRoute />,
+              element: <EditRoute users={users} setUsers={setUsers} />,
             },
           ],
         },

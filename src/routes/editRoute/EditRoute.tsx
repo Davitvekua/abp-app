@@ -1,9 +1,14 @@
 import "./EditRoute.css";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import type { UserProps } from "../user/User";
 import { useEffect, useState } from "react";
 
-function EditRoute() {
+type Props = {
+  users: UserProps[];
+  setUsers: React.Dispatch<React.SetStateAction<UserProps[]>>;
+};
+
+function EditRoute({ users, setUsers }: Props) {
   const { userId } = useParams();
   const [nameValue, setNameValue] = useState("");
   const [dateValue, setDateValue] = useState("");
@@ -12,7 +17,7 @@ function EditRoute() {
   const [adressValue, setAdressValue] = useState("");
   const [telValue, setTelValue] = useState("");
   const [webValue, setWebValue] = useState("");
-  const [users, setUsers] = useState<UserProps[]>([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const userString = localStorage.getItem("user");
@@ -68,13 +73,7 @@ function EditRoute() {
 
     setUsers(newUsers);
     alert("User erfolgreich hinzugefügt");
-    setNameValue("");
-    setDateValue("");
-    setGenderValue("");
-    setEmailValue("");
-    setAdressValue("");
-    setTelValue("");
-    setWebValue("");
+    navigate("/abp-app/overview");
   }
 
   return (
